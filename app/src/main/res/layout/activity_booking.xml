@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/appTitleBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забронированные номера"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+    <View
+        android:id="@+id/navBackground"
+        android:layout_width="420dp"
+        android:layout_height="57dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/navBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/btnBooking"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/navBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/navBackground"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_order" />
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/tvTitleBooking"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:text="Пока что нет забронированных номеров"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/navBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appTitleBooking"
+        app:layout_constraintVertical_bias="0.495" />
+
+
+    <View
+        android:id="@+id/viewBooking1"
+        android:layout_width="361dp"
+        android:layout_height="106dp"
+        android:background="#00BCD4"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <ImageView
+        android:id="@+id/imageBooking1"
+        android:layout_width="171dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/viewBooking1"
+        app:layout_constraintTop_toTopOf="@+id/viewBooking1"
+        app:srcCompat="@drawable/standart" />
+
+
+    <Button
+        android:id="@+id/btnBookStandart"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="Отменить бронь"
+        android:textSize="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageBooking1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCard1"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/tvCard1"
+        android:layout_width="127dp"
+        android:layout_height="19dp"
+        android:text="Номер &quot;Стандарт&quot;"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toEndOf="@+id/imageBooking1"
+        app:layout_constraintTop_toTopOf="@+id/viewBooking1"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/btnGoToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забронировать"
+        app:layout_constraintBottom_toTopOf="@+id/navBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appTitleBooking"
+        app:layout_constraintVertical_bias="0.632" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

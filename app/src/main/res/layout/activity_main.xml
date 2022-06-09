@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/appTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Главная"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/navBackground"
+        android:layout_width="420dp"
+        android:layout_height="57dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/navBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/btnBooking"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/navBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/navBackground"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_order" />
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="@+id/navBackground"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/tvTitleMain"
+        android:layout_width="324dp"
+        android:layout_height="72dp"
+        android:text="Выберите комнату, которую хотите забронировать"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/viewBooking1"
+        android:layout_width="361dp"
+        android:layout_height="106dp"
+        android:background="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+
+
+    <TextView
+        android:id="@+id/tvCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер &quot;Стандарт&quot;"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1"
+        app:layout_constraintTop_toTopOf="@+id/viewBooking1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBookStandart"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:text="Забронировать"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1" />
+
+    <TextView
+        android:id="@+id/tvPersonCounter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="48dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toStartOf="@+id/imagePerson" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintStart_toEndOf="@+id/imagePerson"
+        app:srcCompat="@drawable/ic_wifi_off" />
+
+    <ImageView
+        android:id="@+id/imagePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBooking1"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_tv_off" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPhoto3"
+        android:layout_width="141dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/viewBooking1"
+        app:layout_constraintTop_toTopOf="@+id/viewBooking1"
+        app:srcCompat="@drawable/standart" />
+
+    <View
+        android:id="@+id/viewField2"
+        android:layout_width="361dp"
+        android:layout_height="106dp"
+        android:background="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoto1"
+        android:layout_width="141dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/viewField2"
+        app:layout_constraintTop_toTopOf="@+id/viewField2"
+        app:srcCompat="@drawable/suite" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Номер &quot;Сьют&quot;"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1"
+        app:layout_constraintTop_toTopOf="@+id/viewField2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBookSuit"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:text="Забронировать"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintEnd_toEndOf="@+id/viewField2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1" />
+
+    <TextView
+        android:id="@+id/tvPersonCounter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="52dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintEnd_toStartOf="@+id/imagePerson2" />
+
+    <ImageView
+        android:id="@+id/imagePerson2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto1"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/imageWifi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintStart_toEndOf="@+id/imagePerson2"
+        app:srcCompat="@drawable/ic_wifi" />
+
+    <ImageView
+        android:id="@+id/imageTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField2"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageWifi2"
+        app:srcCompat="@drawable/ic_tv_off" />
+
+
+    <View
+        android:id="@+id/viewField3"
+        android:layout_width="361dp"
+        android:layout_height="106dp"
+        android:background="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoto2"
+        android:layout_width="142dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/viewField2"
+        app:layout_constraintTop_toTopOf="@+id/viewField3"
+        app:srcCompat="@drawable/president" />
+
+    <TextView
+        android:id="@+id/tvTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&quot;Президентский&quot; номер"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooking1"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto2"
+        app:layout_constraintTop_toTopOf="@+id/viewField3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBookPresident"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:text="Забронировать"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintEnd_toEndOf="@+id/viewField3"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto2" />
+
+    <TextView
+        android:id="@+id/tvPersonCounter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="52dp"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintEnd_toStartOf="@+id/imagePerson3" />
+
+    <ImageView
+        android:id="@+id/imagePerson3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto2"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/imageWifi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintStart_toEndOf="@+id/imagePerson3"
+        app:srcCompat="@drawable/ic_wifi" />
+
+    <ImageView
+        android:id="@+id/imageTv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewField3"
+        app:layout_constraintEnd_toEndOf="@+id/viewField3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageWifi3"
+        app:srcCompat="@drawable/ic_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

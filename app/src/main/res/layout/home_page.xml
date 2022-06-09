@@ -20,31 +20,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
-    <Button
-        android:id="@+id/btnSignIn"
+    <TextView
+        android:id="@+id/mainText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="showSignInWindow"
-        android:text="Войти"
+        android:text="У меня уже есть аккаунт."
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
-
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="showSignUpWindow"
-        android:text="Зарегистрироваться"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.725" />
 
     <TextView
         android:id="@+id/mainText"
@@ -57,19 +43,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.311" />
 
-    <TextView
-        android:id="@+id/mainText2"
+    <Button
+        android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="У меня уже есть аккаунт."
-        android:textSize="24sp"
+        android:onClick="showSignUpWindow"
+        android:text="Зарегистрироваться"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.633" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showSignInWindow"
+        android:text="Войти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/appTitle"
+        android:id="@+id/appTitleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Russian Technological Hotel"
@@ -96,5 +96,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="371dp"
+        android:layout_height="91dp"
+        android:text="Данное приложение позволяет пользователям забронировать подходящий номер гостиницы"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

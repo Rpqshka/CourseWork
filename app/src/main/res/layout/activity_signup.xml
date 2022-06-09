@@ -4,64 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/etPassword2"
-        android:layout_width="362dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPassword"
+    tools:context=".HomePage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textPassword2"
-        android:layout_width="227dp"
-        android:layout_height="26dp"
-        android:text="Повторите пароль"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="362dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
-
-    <TextView
-        android:id="@+id/textPassword"
+        android:id="@+id/appTitleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Пароль"
+        android:text="Russian Technological Hotel"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ФИО"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.187" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etFIO"
         android:layout_width="355dp"
         android:layout_height="37dp"
         android:ems="10"
@@ -69,36 +54,24 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.223" />
 
     <TextView
-        android:id="@+id/textEmail"
+        android:id="@+id/textPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Номер телефона"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
-
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Регистрация"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/textRegistration"
@@ -110,60 +83,117 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+
+    <EditText
+        android:id="@+id/etPassword2"
+        android:layout_width="362dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Почта"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/textPassword2"
+        android:layout_width="227dp"
+        android:layout_height="26dp"
+        android:text="Повторите пароль"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="355dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="362dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароль"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <Button
+        android:id="@+id/btnSignUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
-
-    <EditText
-        android:id="@+id/etFio"
-        android:layout_width="345dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.348"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
-
-    <TextView
-        android:id="@+id/textFio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Введите ваше ФИО"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
-
-    <TextView
-        android:id="@+id/textPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Введите ваш номер телефона"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
+        app:layout_constraintVertical_bias="0.863" />
 
     <EditText
         android:id="@+id/etPhone"
-        android:layout_width="345dp"
-        android:layout_height="39dp"
+        android:layout_width="362dp"
+        android:layout_height="42dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
+        android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.347" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

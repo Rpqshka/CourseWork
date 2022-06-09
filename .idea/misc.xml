@@ -3,12 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_main.xml" value="0.10400000000000001" />
-        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2195" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2195" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/drawable/ic_order.xml" value="0.2195" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_booking.xml" value="0.4" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_change_password.xml" value="0.264" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_home.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_mainwindow.xml" value="1.2" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_profile.xml" value="0.4" />
         <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_regxml.xml" value="0.1" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_reset_password.xml" value="0.264" />
         <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_signin.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/activity_signup.xml" value="0.264" />
-        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/home_page.xml" value="0.264" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/fragment_first.xml" value="0.2" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/fragment_second.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/fragment_third.xml" value="0.176" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/layout/home_page.xml" value="0.1" />
+        <entry key="..\:/Users/Rpqshka/AndroidStudioProjects/CourseWork/app/src/main/res/menu/bottom_menu.xml" value="0.19786324786324785" />
       </map>
     </option>
   </component>

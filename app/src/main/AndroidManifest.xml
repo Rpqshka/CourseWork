@@ -14,21 +14,33 @@
         android:theme="@style/Theme.CourseWork"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ResetPassword"
+            android:label="ChangePassword" />
+        <activity
+            android:name=".Booking"
+            android:label="Booking"  />
+        <activity
+            android:name=".Main"
+            android:label="Main"  />
+        <activity
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SignUp"
-            android:label="SignUp">
-        </activity>
+            android:label="SignUp" />
         <activity
             android:name=".SignIn"
-            android:label="SignIn">
-        </activity>
+            android:label="SignIn" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile" />
+
     </application>
 
 </manifest>
